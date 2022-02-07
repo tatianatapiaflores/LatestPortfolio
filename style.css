@@ -1,5 +1,6 @@
 
 .top{
+    margin-top: 100px;
     justify-content: space-evenly;
     display: flex;
 }
@@ -26,7 +27,7 @@ h3{
     width: 800px;
     height: 100px;
     margin: 200px;
-    margin-left: 300px;
+    margin-left: 500px;
     padding-top: 100px;
     size: 50px;
     border-width: 20px;
