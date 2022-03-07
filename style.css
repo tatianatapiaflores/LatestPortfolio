@@ -20,21 +20,6 @@ h1{
 h3{
     text-align: center;
 }
-.intro{
-    font-family: 'Sintony', sans-serif;
-    align-items: center;
-    text-align: center;
-    width: 800px;
-    height: 100px;
-    margin: 200px;
-    margin-bottom: 150px;
-    margin-left: 500px;
-    padding-top: 100px;
-    size: 200px;
-    border-width: 20px;
-    border-style: double;
-    border-color: lightgreen;
-}
 .container1{
     top: 0px;
     width: 100%;
