@@ -1,19 +1,25 @@
-
+*{
+    font-family: 'Libre Baskerville', serif;
+}
 .top{
-    margin-top: 100px;
     justify-content: space-evenly;
     display: flex;
 }
 h1{
+    justify-content: space-evenly;
+    display: flex;
     flex: 1;
     margin: 10px;
     padding: 285px;
     font-size: 50px;
 }
 .image_1{
+    justify-content: space-evenly;
+    display: flex;
     flex: 1;
 }
 .container{
+    padding-top: 100px;
     width: 100%;
     height: 100%;
 }
@@ -30,7 +36,7 @@ h3{
 .fallingFlowers{
     text-align: center;
 }
-.fallingFlowers span{
+.fallingFlowers span {
     display: inline-block;
     width: 46px;
     height: 42px;
@@ -40,6 +46,7 @@ h3{
     -webkit-animation: fallingFlowers 10s infinite linear;
     -moz-animation: fallingFlowers 10s infinite linear;
 }
+
 .fallingFlowers span:nth-child(5n+5){
     -webkit-animation-delay: 1.3s;
     -moz-animation-delay: 1.3s;
@@ -82,14 +89,13 @@ h3{
         -webkit-transform: translate(150px,800px) rotatez(360deg);
     }
 };
-
 .projects{
     padding-bottom: 150px;
     font-size: 25px;
 }
 .row{
-    padding-bottom: 50px;
-    padding-top: 125px;
+    margin-bottom: 50px;
+    margin-top: 125px;
     width: 85%;
     margin: auto;
     display: flex;
@@ -97,12 +103,11 @@ h3{
     justify-content: space-between;
 }
 .col{
-    
     flex-basis: 30%;
     overflow: hidden;
 }
 .card{
-    padding-bottom: 100px;
+
     width: 350px;
     height: 350px;
     margin: auto;
@@ -110,7 +115,6 @@ h3{
     cursor: pointer;
 }
 .inner-box{
-    text-align: center;
     position: relative;
     width: 100%;
     height: 100%;
@@ -126,14 +130,547 @@ h3{
     box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
 }
 .card-front{
-    align-items: center;
+    background-position: center;
     image-rendering: cover;
-    border-radius: 10px;
 }
 .card-back{
-    align-items: center;
+    background: white;
     transform: rotateX(180deg);
+}
+.cook{
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+}
+.rose {
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+}
+.kitchen {
+    position: absolute;
+    right: 0px;
+    bottom: 0;
 }
 .card:hover .inner-box{
     transform: rotateX(-180deg);
 }
+h2{
+    background-color: #bbb1ab;
+    text-align: center;
+    font: 50px;
+}
+h4 {
+    text-align: center;
+}
+table{
+    background-color: #faede5;
+    padding: 25px;
+}
+.html {
+    justify-content: space-evenly;
+    display: flex;
+    flex: 1;
+    padding: 40px;
+    padding-top: 0px;
+    padding-right: 25px;
+}
+    .circular .inner {
+        position: unset;
+        z-index: 6;
+        top: 50%;
+        left: 50%;
+        height: 80px;
+        width: 80px;
+        margin: -40px 0 0 -40px;
+        background: #dde6f0;
+        border-radius: 100%;
+        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+    }
+    .circular .html_number {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% -50%);
+        z-index: 10;
+        font-size: 18px;
+        font-weight: 500;
+        color: black;
+    }
+    .circular .bar {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: #fff;
+        border-radius: 100%;
+        clip: rect(0px, 100px, 100px, 50px);
+    }
+    .circle .bar .progress {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        border-radius: 100%;
+        clip: rect(0px, 50px, 100px, 0px);
+        background: #56514F;
+    }
+    .circle .html_left .progress {
+        z-index: 1;
+        animation: html_left 4s linear both;
+    }
+    @keyframes html_left {
+        100%{
+            transform: rotate(180deg);
+        }
+    }
+    .circle .html_right {
+        z-index: 1;
+        transform: rotate(180deg);
+    }
+    .circle .html_right .progress {
+        animation: html_right 4s linear both;
+        animation-delay: 4s;
+    }
+    @keyframes html_right {
+        100%{
+            transform: rotate(162deg);
+        }
+    }
+
+.css {
+    justify-content: space-evenly;
+    display: flex;
+    flex: 1;
+    padding: 40px;
+    padding-top: 0px;
+}
+    .circular .inner {
+        position: unset;
+        z-index: 6;
+        top: 50%;
+        left: 50%;
+        height: 80px;
+        width: 80px;
+        margin: -40px 0 0 -40px;
+        background: #dde6f0;
+        border-radius: 100%;
+        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+    }
+    .css .circular .css_number {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% -50%);
+        z-index: 10;
+        font-size: 18px;
+        font-weight: 500;
+        color: black;
+    }
+    .css .circular .bar {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: #fff;
+        border-radius: 100%;
+        clip: rect(0px, 100px, 100px, 50px);
+    }
+    .css .circle .bar .progress {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        border-radius: 100%;
+        clip: rect(0px, 50px, 100px, 0px);
+        background: #56514F;
+    }
+    .circle .css_left .progress {
+        z-index: 1;
+        animation: css_left 4s linear both;
+    }
+    @keyframes css_left {
+        100%{
+            transform: rotate(180deg);
+        }
+    }
+    .circle .css_right {
+        z-index: 3;
+        transform: rotate(180deg);
+    }
+    .circle .css_right .progress {
+        animation: css_right 4s linear both;
+        animation-delay: 4s;
+    }
+    @keyframes css_right {
+        100%{
+            transform: rotate(144deg);
+        }
+    }
+.javascript {
+    justify-content: space-evenly;
+    display: flex;
+    flex: 1;
+    padding: 40px;
+    padding-top: 0px;
+}
+   
+    .circular .javascript_number {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% -50%);
+        z-index: 10;
+        font-size: 18px;
+        font-weight: 500;
+        color: black;
+    }
+    .circular .bar {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: #fff;
+        border-radius: 100%;
+        clip: rect(0px, 100px, 100px, 50px);
+    }
+    .circle .bar .progress {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        border-radius: 100%;
+        clip: rect(0px, 50px, 100px, 0px);
+        background: #56514F;
+    }
+    .circle .javascript_left .progress {
+        z-index: 1;
+        animation: javascript_left 4s linear both;
+    }
+    @keyframes javascript_left {
+        100%{
+            transform: rotate(180deg);
+        }
+    }
+    .circle .javascript_right {
+        z-index: 3;
+        transform: rotate(180deg);
+    }
+    .circle .javascript_right .progress {
+        animation: javascript_right 4s linear both;
+        animation-delay: 4s;
+    }
+    @keyframes javascript_right {
+        100%{
+            transform: rotate(126deg);
+        }
+    }
+.react {
+    justify-content: space-evenly;
+    display: flex;
+    flex: 1;
+    padding: 40px;
+    padding-top: 0px;
+}
+   
+    .circular .react_number {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% -50%);
+        z-index: 10;
+        font-size: 18px;
+        font-weight: 500;
+        color: black;
+    }
+    .circular .bar {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: #fff;
+        border-radius: 100%;
+        clip: rect(0px, 100px, 100px, 50px);
+    }
+    .circle .bar .progress {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        border-radius: 100%;
+        clip: rect(0px, 50px, 100px, 0px);
+        background: #56514F;
+    }
+    .circle .react_left .progress {
+        z-index: 1;
+        animation: react_left 4s linear both;
+    }
+    @keyframes react_left {
+        100%{
+            transform: rotate(180deg);
+        }
+    }
+    .circle .react_right {
+        z-index: 3;
+        transform: rotate(180deg);
+    }
+    .circle .react_right .progress {
+        animation: react_right 4s linear both;
+        animation-delay: 4s;
+    }
+    @keyframes react_right {
+        100%{
+            transform: rotate(126deg);
+        }
+    }
+.python {
+    justify-content: space-evenly;
+    display: flex;
+    flex: 1;
+    padding: 40px;
+    padding-top: 0px;
+}
+   
+    .circular .python_number {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% -50%);
+        z-index: 10;
+        font-size: 18px;
+        font-weight: 500;
+        color: black;
+    }
+    .circular .bar {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: #fff;
+        border-radius: 100%;
+        clip: rect(0px, 100px, 100px, 50px);
+    }
+    .circle .bar .progress {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        border-radius: 100%;
+        clip: rect(0px, 50px, 100px, 0px);
+        background: #56514F;
+    }
+    .circle .python_left .progress {
+        z-index: 1;
+        animation: python_left 4s linear both;
+    }
+    @keyframes python_left {
+        100%{
+            transform: rotate(180deg);
+        }
+    }
+    .circle .python_right {
+        z-index: 3;
+        transform: rotate(180deg);
+    }
+    .circle .python_right .progress {
+        animation: python_right 4s linear both;
+        animation-delay: 4s;
+    }
+    @keyframes python_right {
+        100%{
+            transform: rotate(36deg);
+        }
+    }
+.c {
+    justify-content: space-evenly;
+    display: flex;
+    flex: 1;
+    padding: 40px;
+    padding-top: 0px;
+}
+   
+    .circular .c_number {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% -50%);
+        z-index: 10;
+        font-size: 18px;
+        font-weight: 500;
+        color: black;
+    }
+    .circular .bar {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: #fff;
+        border-radius: 100%;
+        clip: rect(0px, 100px, 100px, 50px);
+    }
+    .circle .bar .progress {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        border-radius: 100%;
+        clip: rect(0px, 50px, 100px, 0px);
+        background: #56514F;
+    }
+    .circle .c_left .progress {
+        z-index: 1;
+        animation: c_left 4s linear both;
+    }
+    @keyframes c_left {
+        100%{
+            transform: rotate(180deg);
+        }
+    }
+    .circle .c_right {
+        z-index: 3;
+        transform: rotate(180deg);
+    }
+    .circle .c_right .progress {
+        animation: c_right 4s linear both;
+        animation-delay: 4s;
+    }
+    @keyframes c_right {
+        100%{
+            transform: rotate(36deg);
+        }
+    }
+.git {
+    justify-content: space-evenly;
+    display: flex;
+    flex: 1;
+    padding: 40px;
+    padding-top: 0px;
+}
+   
+    .circular .git_number {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% -50%);
+        z-index: 10;
+        font-size: 18px;
+        font-weight: 500;
+        color: black;
+    }
+    .circular .bar {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: #fff;
+        border-radius: 100%;
+        clip: rect(0px, 100px, 100px, 50px);
+    }
+    .circle .bar .progress {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        border-radius: 100%;
+        clip: rect(0px, 50px, 100px, 0px);
+        background: #56514F;
+    }
+    .circle .git_left .progress {
+        z-index: 1;
+        animation: git_left 4s linear both;
+    }
+    @keyframes git_left {
+        100%{
+            transform: rotate(180deg);
+        }
+    }
+    .circle .git_right {
+        z-index: 3;
+        transform: rotate(180deg);
+    }
+    .circle .git_right .progress {
+        animation: git_right 4s linear both;
+        animation-delay: 4s;
+    }
+    @keyframes git_right {
+        100%{
+            transform: rotate(162deg);
+        }
+}
+.line {
+    justify-content: space-evenly;
+    display: flex;
+    flex: 1;
+    padding: 40px;
+    margin-right: 0px;
+    padding-top: 0px;
+}
+    .circular {
+        height: 100px;
+        width: 100px;
+        transform: scale(0.8);
+        margin: 0px;
+        padding: 0px;
+        border: 0px;
+    }
+    .circular .inner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 80px;
+        width: 80px;
+        background: white;
+        border-radius: 100%;
+        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+    }
+    .circular .line_number {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% -50%);
+        z-index: 10;
+        font-size: 18px;
+        font-weight: 500;
+        color: black;
+    }
+    .circular .bar {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: #fff;
+        border-radius: 100%;
+        clip: rect(0px, 100px, 100px, 50px);
+    }
+    .circle .bar .progress {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        border-radius: 100%;
+        clip: rect(0px, 50px, 100px, 0px);
+        background: #56514F;
+    }
+    .circle .line_left .progress {
+        z-index: 1;
+        animation: line_left 4s linear both;
+    }
+    @keyframes line_left {
+        100%{
+            transform: rotate(180deg);
+        }
+    }
+    .circle .line_right {
+        z-index: 3;
+        transform: rotate(180deg);
+    }
+    .circle .line_right .progress {
+        animation: line_right 4s linear both;
+        animation-delay: 4s;
+    }
+    @keyframes line_right {
+        100%{
+            transform: rotate(162deg);
+        }
+    }
+    .photos1 {
+        justify-content: space-around;
+        display: flex;
+        margin: 40px;
+        align-items: center;
+    }
+    .photos1 div {
+        flex: 1;
+    }
+    .photoshop {
+        margin-top: 150px;
+        margin-bottom: 150px;
+    }
+    .lot {
+        margin-left: 125px;
+        align-items: center;
+    }
